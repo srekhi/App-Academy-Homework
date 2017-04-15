@@ -1,6 +1,5 @@
 require 'byebug'
 class Array
-
   # Monkey patch the Array class and add a my_inject method. If my_inject receives
   # no argument, then use the first element of the array as the default accumulator.
 
@@ -43,11 +42,12 @@ end
 # is 1!, the 3rd factorial is 2!, etc.
 
 def factorials_rec(num)
+  #first factorial is 0! = 1
+  #second is 1! = 1
   return [1] if num == 1
   return [1,1] if num == 2
-
-  prev_facts = factorials_rec(num - 1)
-  prev_facts << (num - 1) * prev_facts[-1]
+  prev_facts = factorials_rec(num-1)
+  prev_facts << prev_facts[-1] * (num-1)
 end
 
 class Array

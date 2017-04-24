@@ -8,6 +8,7 @@ class CatsController < ApplicationController
   end
 
   def show
+    fail
     @cat = Cat.find(params[:id])
     render :show
   end

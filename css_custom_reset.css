@@ -1,0 +1,32 @@
+html header img nav ul li h1 h2 figure
+figcaption p aside ol
+footer section
+  {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+
+  background: transparent;
+
+}
+
+h1 {
+  background-color: blue;
+}
+
+select, input[type="radio"], input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+}
+
+input:last-child{
+  background-color: gold;
+}
+input:last-child:hover{
+  opacity: 0.5
+}

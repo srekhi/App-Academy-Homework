@@ -2,11 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Sunny Recipe</title>
-    <link rel="stylesheet" href="css_reset.css">
+    <title>Sunny's Recipe</title>
+    <meta name="description" content="The best recipe that has ever been written">
+    <script type="text/javascript" src="external_javascript_example.js"/>
+    <link rel="stylesheet" href="css_custom_reset.css" type="text/css"/>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-12345678-9', 'auto');
+      ga('send', 'pageview');
+  </script>
   </head>
   <body>
-
     <header>
       <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Appacademylogo.png/175px-Appacademylogo.png" />
       <nav>
@@ -18,13 +28,10 @@
       </nav>
     </header>
     <h1>Shakshuka</h1>
+
     <h2>Breakfast Recipe</h2>
-
-
     <h2>Description</h2>
     <section>
-
-
       <figure>
         <img src ="" alt="recipe image"
       </figure>
@@ -35,18 +42,47 @@
       <p>Best recipe ever made</p>
       <aside>
         <h2> Ingredients </h2>
-        <ol class="ingredients-list">
+        <ol>
           <li>Direction 1</li>
           <li>Direction 2</li>
         </ol>
       </aside>
-
+    </section>
+    <!-- Original author: Sunny -->
+    <section id="reviews" >
+      <form id="review-form" action="/reviews" method="post">
+        <label for="review">Reviewer Name</label>
+        <input id="review" type="text" name="reviewer" value="">
+        <br>
+        <label for="rating">Rating</label>
+        <select id="rating" name="Rating">
+          <input type= "radio" name = "rating" value ="value1">1</option>
+          <input type= "radio" name = "rating" value ="value2">2</option>
+          <input type= "radio" name = "rating" value ="value3">3</option>
+          <input type= "radio" name = "rating" value ="value4">4</option>
+          <input type= "radio" name = "rating" value ="value5">5</option>
+        </select>
+        <br>
+        <label for="cooking">Cooking Expertise</label>
+        <select id="cooking" name="Cooking Expertise">
+          <option disabled selected value="value1">--Select Cooking Expertise--</option>
+          <option value="value2">Sometimes Cook</option>
+          <option value="value3">Cook Everyday</option>
+          <option value="value4">Cooking is a Hobby</option>
+          <option value="value5">Professional Chef</option>
+        </select>
+        <br>
+        <label>
+          <textarea name="review"></textarea>
+        </label>
+      </form>
+      <input type="submit" value="Submit Review">
     </section>
 
-    <!-- Original author: Sunny -->
     <footer>
       Footer: recipe originated from nowhere
     </footer>
+
 
   </body>
 </html>

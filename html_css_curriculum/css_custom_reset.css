@@ -1,6 +1,6 @@
 html header img nav ul li h1 h2 figure
 figcaption p aside ol
-footer section
+footer section ul nav
   {
   margin: 0;
   border: 0;
@@ -15,13 +15,54 @@ footer section
 
 }
 
-h1 {
-  background-color: blue;
+body {
+  width: 900px;
+  margin: 0 auto;
 }
 
+aside {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+ol li:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+section:first-of-type {
+  background-color: green;
+  width: auto;
+  display: inline-block;
+}
+
+ol:first-of-type > li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/*
+input[type="radio"] {
+  -webkit-appearance: none;
+  background-image: url("stars.png");
+}*/
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    background-image: url(stars.png);
+    vertical-align: bottom;
+    display: inline;
+  }
 select, input[type="radio"], input[type="submit"] {
   cursor: pointer;
   outline: none;
+}
+
+select {
+  margin: 10px 0;
+}
+
+textarea, input[type="text"], section > select {
+  width: 200px;
 }
 
 input:last-child{
@@ -29,4 +70,38 @@ input:last-child{
 }
 input:last-child:hover{
   opacity: 0.5
+}
+
+nav {
+  float: right
+}
+
+nav li {
+  display: inline-block;
+}
+
+li a {
+}
+
+nav a {
+  padding: 20px
+}
+
+section {
+  width: 700px;
+}
+input {
+  display: block;
+}
+
+
+
+
+img {
+  float: left;
+  display: inline;
+}
+
+ul {
+  display: inline
 }

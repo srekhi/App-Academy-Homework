@@ -95,7 +95,11 @@ input {
 }
 
 
-
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
 
 img {
   float: left;

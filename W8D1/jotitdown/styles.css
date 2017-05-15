@@ -1,0 +1,47 @@
+nav {
+  width: 100%;
+  background-color: gray;
+  padding-top: 10px;
+}
+
+main, footer {
+  margin: 0 auto;
+  padding-top: 10px;
+  display: block;
+  width: 40%;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+}
+
+main {
+
+}
+
+nav > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul > li {
+  padding: 0 7px 0 7px;
+}
+
+img {
+  height: 40%;
+  display: block;
+  width: 40%;
+  margin: 15px auto 0 auto;
+}
+
+html, body {
+  height: 100%;
+}
+
+nav > ul > li > button:hover {
+  background-color: red;
+  cursor: pointer;
+}
